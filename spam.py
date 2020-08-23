@@ -13,7 +13,8 @@ driver.get("https://web.whatsapp.com/")
 driver.implicitly_wait(60)
 
 #Xpath of the text box is given
-element=driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/input")
+element=driver.find_element_by_xpath("/html/body/div[1]/div/div/div[3]/div/div[1]/div/label/div/div[2]")  
+
 
 #Enter the friend's name.Write in correct spelling
 element.send_keys("Enter Name Here ",Keys.RETURN)
